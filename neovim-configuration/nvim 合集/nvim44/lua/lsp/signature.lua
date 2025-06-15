@@ -1,0 +1,28 @@
+local cfg = {
+  bind = true,
+  doc_lines = 10,
+  floating_window = true,
+  floating_window_above_cur_line = true,
+  floating_window_off_x = 1,
+  floating_window_off_y = 1,
+  fix_pos = true,
+  hint_enable = true,
+  hint_prefix = ' ',
+  hint_scheme = 'String',
+  hi_parameter = 'Search',
+  max_height = 12,
+  max_width = 40,
+  handler_opts = {
+    border = 'single',
+  },
+  always_trigger = false,
+  check_completion_visible = true,
+  extra_trigger_chars = { "(", "," },
+  zindex = 200,
+  padding = '',
+  transparency = nil,
+  shadow_blend = 22,
+  shadow_guibg = '#FFC300',
+  toggle_key = nil,
+}
+require "lsp_signature".setup(cfg)

@@ -1,0 +1,10 @@
+{
+  "javascript is if": {
+    "score": "if",
+    "prefix": "todo",
+    "body": [
+      "for"
+    ],
+    "description": "for",
+  }
+}

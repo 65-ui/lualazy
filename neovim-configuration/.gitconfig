@@ -1,0 +1,7 @@
+[url "https://gitclone.com/"]
+	insteadOf = https://
+[url "https://ghproxy.com/https://github.com"]
+	insteadOf = https://github.com
+[user]
+	name = 三岁
+	email = 872115355@qq.com
