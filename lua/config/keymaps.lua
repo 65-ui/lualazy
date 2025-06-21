@@ -188,3 +188,20 @@ end, { desc = "Format JSON" })
 vim.keymap.set("n", "<leader>vj", function()
   require("telescope.builtin").diagnostics({ bufnr = 0 })
 end, { desc = "View JSON diagnostics" })
+
+-- ~/.config/nvim/lua/config/keymaps.lua
+-- 添加快捷键绑定
+local map = vim.keymap.set
+
+-- 打开 "Todo" 列表窗口
+map("n", "<leader>ft", ":TodoTelescope<CR>", { desc = "Find TODOs" })
+
+-- 快速跳转到下一个 TODO 注释
+map("n", "]t", function()
+  require("todo-comments").jump_next()
+end, { desc = "Next TODO" })
+
+-- 快速跳转到上一个 TODO 注释
+map("n", "[t", function()
+  require("todo-comments").jump_prev()
+end, { desc = "Previous TODO" })
